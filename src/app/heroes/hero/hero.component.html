@@ -1,0 +1,34 @@
+
+
+<dl>
+
+  <dd>Nombre</dd>
+  <dd>{{ name }}</dd>
+
+  <dd>Edad</dd>
+  <dd>{{age}}</dd>
+
+
+  <dd>{{ getHeroDescription() }}</dd>
+
+
+  <dd>{{ capitalizeName}}</dd>
+
+
+
+  <button
+    *ngIf="name !== 'nombre03'"
+    (click)="changeHero()"
+    class="btn btn-primary">
+    Cambiar Nombre
+  </button>
+
+
+  <button (click)="CambiarEdad()" class="btn btn-primary">
+    Cambiar Edad
+  </button>
+
+
+
+</dl>
+
